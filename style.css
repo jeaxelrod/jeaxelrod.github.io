@@ -14,6 +14,7 @@ body {
 	position: absolute;
 	bottom: 30px;
 	right: 30px;
+  text-align: right;
 }
 a {
 	color:black;
@@ -39,6 +40,9 @@ a:hover {
 }
 .projects h3 {
   display: inline-block;
+  font-family: 'helvetica', 'arial';
+  margin: 0;
+  font-weight: no;
 }
 .projects a h2 {
   text-decoration: underline;
@@ -47,4 +51,7 @@ a:hover {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.projects li {
+  margin-top: 5px;
 }
