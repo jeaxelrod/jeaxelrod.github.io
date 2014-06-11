@@ -1,0 +1,51 @@
+body {
+  font-family: "Courier New";
+  font-size: 12px; }
+
+.container {
+  min-height: 94vh; }
+
+.title {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  text-align: right; }
+  .title h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 3em; }
+
+a {
+  color: black; }
+
+a:hover {
+  color: darkgray; }
+
+.projects {
+  margin-top: 30px;
+  margin-left: 30px; }
+  .projects a {
+    text-decoration: none;
+    border-bottom: 1px solid black; }
+  .projects a:hover {
+    border-bottom: 1px solid darkgray; }
+  .projects h1 {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 3em; }
+  .projects h2 {
+    font-weight: normal;
+    margin: 0;
+    display: inline-block;
+    font-size: 2em; }
+  .projects h3 {
+    display: inline-block;
+    font-family: 'helvetica', 'arial';
+    margin: 0;
+    font-weight: none; }
+  .projects ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .projects li {
+    margin-top: 5px; }
