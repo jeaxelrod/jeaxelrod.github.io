@@ -7,6 +7,7 @@ body {
 
 .container {
 	min-height: 94vh;
+  position: relative
 }
 .title {
 	position: absolute;
@@ -22,6 +23,9 @@ body {
 a {
 	color:black;
 }
+a.active {
+  color: gray;
+}
 a:hover {
 	color: darkgray;
 }
@@ -31,6 +35,10 @@ a:hover {
   a {
     text-decoration: none;
     border-bottom: 1px solid black;
+  }
+  a.active {
+    color: gray;
+    border-bottom: 1px solid darkgray;
   }
   a:hover {
     border-bottom: 1px solid darkgray;
@@ -65,5 +73,18 @@ a:hover {
   }
   li {
     margin-top: 5px;
+  }
+}
+.content {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+  h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+  .site-picture img {
+    max-width: 1000px;
+    width: 100%;
   }
 }
