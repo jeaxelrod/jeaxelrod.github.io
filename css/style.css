@@ -16,6 +16,21 @@ body {
     font-weight: normal;
     font-size: 3em; }
 
+.title.header {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  text-align: right; }
+  .title.header h1 {
+    margin-bottom: 10px; }
+  .title.header h2 {
+    font-size: 2em;
+    margin: 5px 0 0 0;
+    font-weight: normal;
+    padding-bottom: 1px; }
+  .title.header h2:nth-child(2) {
+    margin-bottom: -5px; }
+
 a {
   color: black; }
 
@@ -60,7 +75,8 @@ a:hover {
 .content {
   max-width: 1000px;
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 250px; }
   .content h1 {
     font-size: 3em;
     text-align: center; }
