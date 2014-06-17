@@ -8,7 +8,9 @@ body {
 	font-family: "Courier New";
 	font-size: 12px;
 }
-
+.display-none {
+  display: none;
+}
 .container {
 	min-height: 94vh;
   position: relative;
@@ -101,12 +103,21 @@ a:hover {
   max-width: 1000px;
   width: 80%;
   margin: 0 auto;
-  h1 {
-    font-size: 3em;
+  .project-title {
     text-align: center;
+  
+    h1 {
+      font-size: 3em;
+      text-align: center;
+      margin-bottom: 5px;
+    }
   }
   .site-picture img {
     max-width: 1000px;
     width: 100%;
+  }
+  .site-logo {
+    width: 400px;
+    margin: 0 auto;
   }
 }
