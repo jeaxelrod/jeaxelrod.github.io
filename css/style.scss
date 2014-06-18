@@ -11,6 +11,18 @@ body {
 .display-none {
   display: none;
 }
+h1, h2, h3, h4, h5, p, div {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+a {
+	color: black;
+}
+
+a:hover {
+	color: gray;
+}
 .container {
 	min-height: 94vh;
   position: relative;
@@ -21,63 +33,43 @@ body {
 	right: 30px;
   text-align: right;
   h1 {
-  	margin:0;
-  	font-weight: normal;
-  	font-size: 3em;
+    font-family: 'helvetica', 'arial';
+    font-weight: bold;
+    font-size: 3.5em;
   }
+  h2 {
+    font-size: 3em;
+  }
+}
+header {
+  font-size: 8px;
 }
 .title.header {
   position: absolute;
   top: 0;
   right: 30px;
   text-align: right;
-  h1 {
-    margin-bottom: 10px;
-  }
   h2 {
-    font-size: 2em;
-    margin: 5px 0 0 0;
-    font-weight: normal;
-    padding-bottom: 1px;
+    font-size: 3em;
   }
   h2:nth-child(2) {
     margin-bottom: -5px;
   }
 }
-a {
-	color:black;
-}
-a.active {
-  color: gray;
-}
-a:hover {
-	color: darkgray;
-}
+
 .projects {
   margin-top: 30px;
   margin-left: 30px;
-  a {
-    text-decoration: none;
-    border-bottom: 1px solid black;
-  }
   a.active {
     color: gray;
-    border-bottom: 1px solid darkgray;
-  }
-  a:hover {
-    border-bottom: 1px solid darkgray;
   }
   h1 {
-    margin-bottom: 10px;
-    font-weight: normal;
-    font-size: 3em;
+    font-family: 'helvetica', 'arial';
+    font-weight: bold;
+    font-size: 3.5em;
   }
-  
   h2 {
-    font-weight:normal;
-    margin: 0;
-    display: inline-block;
-    font-size: 2em;
+    font-size: 3em;
   
     i {
     }
@@ -96,7 +88,7 @@ a:hover {
     margin: 0;
   }
   li {
-    margin-top: 5px;
+    margin-top: 0px;
   }
 }
 .content {
@@ -109,8 +101,16 @@ a:hover {
     h1 {
       font-size: 3em;
       text-align: center;
-      margin-bottom: 5px;
+      margin-bottom: 0;
     }
+    a {
+      font-size: 1.5em;
+    }
+  }
+  p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .site-picture img {
     max-width: 1000px;
