@@ -2,6 +2,20 @@ body {
   font-family: "Courier New";
   font-size: 12px; }
 
+.display-none {
+  display: none; }
+
+h1, h2, h3, h4, h5, p, div {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+a {
+  color: black; }
+
+a:hover {
+  color: gray; }
+
 .container {
   min-height: 94vh;
   position: relative; }
@@ -12,54 +26,36 @@ body {
   right: 30px;
   text-align: right; }
   .title h1 {
-    margin: 0;
-    font-weight: normal;
+    font-family: 'helvetica', 'arial';
+    font-weight: bold;
+    font-size: 3.5em; }
+  .title h2 {
     font-size: 3em; }
+
+header {
+  font-size: 8px; }
 
 .title.header {
   position: absolute;
   top: 0;
   right: 30px;
   text-align: right; }
-  .title.header h1 {
-    margin-bottom: 10px; }
   .title.header h2 {
-    font-size: 2em;
-    margin: 5px 0 0 0;
-    font-weight: normal;
-    padding-bottom: 1px; }
+    font-size: 3em; }
   .title.header h2:nth-child(2) {
     margin-bottom: -5px; }
-
-a {
-  color: black; }
-
-a.active {
-  color: gray; }
-
-a:hover {
-  color: darkgray; }
 
 .projects {
   margin-top: 30px;
   margin-left: 30px; }
-  .projects a {
-    text-decoration: none;
-    border-bottom: 1px solid black; }
   .projects a.active {
-    color: gray;
-    border-bottom: 1px solid darkgray; }
-  .projects a:hover {
-    border-bottom: 1px solid darkgray; }
+    color: gray; }
   .projects h1 {
-    margin-bottom: 10px;
-    font-weight: normal;
-    font-size: 3em; }
+    font-family: 'helvetica', 'arial';
+    font-weight: bold;
+    font-size: 3.5em; }
   .projects h2 {
-    font-weight: normal;
-    margin: 0;
-    display: inline-block;
-    font-size: 2em; }
+    font-size: 3em; }
   .projects h3 {
     display: inline-block;
     font-family: 'helvetica', 'arial';
@@ -70,16 +66,27 @@ a:hover {
     padding: 0;
     margin: 0; }
   .projects li {
-    margin-top: 5px; }
+    margin-top: 0px; }
 
 .content {
   max-width: 1000px;
   width: 80%;
-  margin: 0 auto;
-  padding-bottom: 250px; }
-  .content h1 {
-    font-size: 3em;
+  margin: 0 auto; }
+  .content .project-title {
     text-align: center; }
+    .content .project-title h1 {
+      font-size: 3em;
+      text-align: center;
+      margin-bottom: 0; }
+    .content .project-title a {
+      font-size: 1.5em; }
+  .content p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px; }
   .content .site-picture img {
     max-width: 1000px;
     width: 100%; }
+  .content .site-logo {
+    width: 400px;
+    margin: 0 auto; }
