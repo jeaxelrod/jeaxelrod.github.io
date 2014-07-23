@@ -1,0 +1,43 @@
+body {
+  font-size: 60px;
+  font-family: arial;
+  background-color: black;
+  min-height: 95vh;
+}
+.container {
+  height: 100%;
+}
+.instructions {
+  position: absolute;
+  left: 50%;
+  margin-left: -111px;
+  text-align: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+
+}
+.text-center {
+  text-align: center;
+}
+p {
+  color: black;
+  margin: 5% 0;
+}
+.hidden  {
+  color: black;
+  left: 0;
+}
+.hidden a {
+  color: black;
+}
+#hidden-element:hover {
+  color: #0d0d0d;
+}
+#hidden-element {
+  color: white;
+}
