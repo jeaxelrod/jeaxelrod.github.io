@@ -33,13 +33,20 @@ a:hover {
     font-size: 3em; }
 
 header {
-  font-size: 8px; }
+  font-size: 8px;
+  height: 80px; }
 
 .title.header {
-  position: absolute;
-  top: 0;
-  right: 30px;
-  text-align: right; }
+  position: static;
+  width: 80%;
+  text-align: right;
+  height: 50px;
+  padding-top: 30px;
+  max-width: 1000px;
+  background-color: #fff;
+  margin: auto; }
+  .title.header a {
+    text-decoration: none; }
   .title.header h2 {
     font-size: 3em; }
   .title.header h2:nth-child(2) {
@@ -80,6 +87,8 @@ header {
       margin-bottom: 0; }
     .content .project-title a {
       font-size: 1.5em; }
+  .content .description {
+    margin: 0 20px; }
   .content p {
     font-size: 1.5em;
     margin-top: 10px;
