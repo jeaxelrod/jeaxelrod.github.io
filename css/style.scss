@@ -43,12 +43,20 @@ a:hover {
 }
 header {
   font-size: 8px;
+  height: 80px;
 }
 .title.header {
-  position: absolute;
-  top: 0;
-  right: 30px;
+  position: static;
+  width: 80%;
   text-align: right;
+  height: 50px;
+  padding-top: 30px;
+  max-width: 1000px;
+  background-color: #fff;
+  margin: auto;
+  a {
+    text-decoration: none;
+  }
   h2 {
     font-size: 3em;
   }
@@ -106,6 +114,9 @@ header {
     a {
       font-size: 1.5em;
     }
+  }
+  .description {
+    margin: 0 20px;
   }
   p {
     font-size: 1.5em;
