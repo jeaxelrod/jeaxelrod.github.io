@@ -93,6 +93,11 @@ header {
     font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 10px; }
+  .content h2 {
+    text-align: center;
+    margin: 10px 0; }
+  .content #purpose-description {
+    margin-top: 100px; }
   .content .site-picture img {
     max-width: 1000px;
     width: 100%; }
