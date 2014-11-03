@@ -20,6 +20,21 @@ a:hover {
   min-height: 94vh;
   position: relative; }
 
+nav {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto; }
+
+nav a {
+  display: inline-block;
+  font-family: "Courier New";
+  font-size: 1.5em;
+  font-weight: lighter; }
+
+header {
+  font-size: 8px;
+  height: 80px; }
+
 .title {
   position: absolute;
   bottom: 30px;
@@ -31,10 +46,6 @@ a:hover {
     font-size: 3.5em; }
   .title h2 {
     font-size: 3em; }
-
-header {
-  font-size: 8px;
-  height: 80px; }
 
 .title.header {
   position: static;
@@ -52,27 +63,41 @@ header {
   .title.header h2:nth-child(2) {
     margin-bottom: -5px; }
 
-.projects {
+.projects,
+.links,
+.contributions {
   margin-top: 30px;
   margin-left: 30px; }
-  .projects a.active {
+  .projects a.active,
+  .links a.active,
+  .contributions a.active {
     color: gray; }
-  .projects h1 {
+  .projects h1,
+  .links h1,
+  .contributions h1 {
     font-family: 'helvetica', 'arial';
     font-weight: bold;
     font-size: 3.5em; }
-  .projects h2 {
+  .projects h2,
+  .links h2,
+  .contributions h2 {
     font-size: 3em; }
-  .projects h3 {
+  .projects h3,
+  .links h3,
+  .contributions h3 {
     display: inline-block;
     font-family: 'helvetica', 'arial';
     margin: 0;
     font-weight: none; }
-  .projects ul {
+  .projects ul,
+  .links ul,
+  .contributions ul {
     list-style: none;
     padding: 0;
     margin: 0; }
-  .projects li {
+  .projects li,
+  .links li,
+  .contributions li {
     margin-top: 0px; }
 
 .content {
@@ -88,7 +113,7 @@ header {
     .content .project-title a {
       font-size: 1.5em; }
   .content .description {
-    margin: 0 20px; }
+    margin: 0; }
   .content p {
     font-size: 1.5em;
     margin-top: 10px;
@@ -104,3 +129,5 @@ header {
   .content .site-logo {
     width: 400px;
     margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */
