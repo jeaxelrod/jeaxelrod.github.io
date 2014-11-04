@@ -27,12 +27,12 @@ a:hover {
 	min-height: 94vh;
   position: relative;
 }
-nav {
+.nav {
   max-width: 1000px;
   width: 80%;
   margin: 0 auto;
 }
-nav a {
+.nav a {
   display: inline-block;
   font-family: "Courier New";
   font-size: 1.5em;
@@ -42,7 +42,8 @@ header {
   font-size: 8px;
   height: 80px;
 }
-.title {
+.title,
+.index-nav {
   position: absolute;
   bottom: 30px;
   right: 30px;
