@@ -20,12 +20,13 @@ a:hover {
   min-height: 94vh;
   position: relative; }
 
-nav {
+.nav {
   max-width: 1000px;
   width: 80%;
   margin: 0 auto; }
 
-nav a {
+.nav a,
+.nav p {
   display: inline-block;
   font-family: "Courier New";
   font-size: 1.5em;
@@ -35,16 +36,19 @@ header {
   font-size: 8px;
   height: 80px; }
 
-.title {
+.title,
+.index-nav {
   position: absolute;
   bottom: 30px;
   right: 30px;
   text-align: right; }
-  .title h1 {
+  .title h1,
+  .index-nav h1 {
     font-family: 'helvetica', 'arial';
     font-weight: bold;
     font-size: 3.5em; }
-  .title h2 {
+  .title h2,
+  .index-nav h2 {
     font-size: 3em; }
 
 .title.header {
