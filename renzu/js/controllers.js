@@ -114,7 +114,6 @@ renzuControllers.controller('AppIndexCtrl', ['$scope', '$http', '$compile', 'gra
           }));
         }
       }
-      console.log($scope.options);
     }
   }
 ]);
@@ -136,10 +135,18 @@ renzuControllers.controller('AppShowCtrl', ['$scope', '$http', '$routeParams', '
       //TODO set options
       $scope.dauOptions = graphServices.createDAUOptions({
         dauMax:  $scope.app.dauMax,
-        appName: $scope.app.name
       });
-      console.log($scope.dauOptions);
+
+      $scope.dauOptions.title = {
+        enable: true,
+        text: "DAU"
+      }
+
       $scope.d1Options = graphServices.createD1Options();
+      $scope.d1Options.title = {
+        enable: true,
+        text: "D1 Retention"
+      }
       
       //TODO automate filtering data better
       $scope.dauData = graphServices.filterAndFormatData({
@@ -154,7 +161,6 @@ renzuControllers.controller('AppShowCtrl', ['$scope', '$http', '$routeParams', '
         apps:     [$scope.app.name],
         platform: "Android"
       }));
-      console.log($scope.dauData);
 
       $scope.d1Data = graphServices.filterAndFormatData({
         data:     allData,
