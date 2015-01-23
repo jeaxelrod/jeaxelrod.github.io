@@ -1,0 +1,32 @@
+[
+  {
+    "id": "candy-bash",
+    "name": "CandyBash",
+    "category": "games",
+    "dauMax": 36000000 
+  },
+  {
+    "id": "words-with-enemies",
+    "name": "Words With Enemies",
+    "category": "games",
+    "dauMax": 26000000 
+  },
+  {
+    "id": "crappy-birds",
+    "name": "Crappy Birds",
+    "category": "games",
+    "dauMax": 2919319
+  },
+  {
+    "id": "zuber",
+    "name":  "Zuber",
+    "category": "services",
+    "dauMax": 11331039 
+  },
+  {
+    "id": "carry",
+    "name": "Carry",
+    "category": "services",
+    "dauMax": 2251376
+  }
+]

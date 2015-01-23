@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="text-center col-md-8 col-md-offset-2">
+    <h3>Apps</h3>
+    <button type="button" class="btn btn-primary" ng-repeat="app in apps" ng-class="{active: app.active}" ng-click="app.active = !app.active; updateGraphs();">{{app.name}}</button>
+
+    <h3>Metrics</h3>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default" ng-class="{active: metric==='DAU'}" ng-click="metric = 'DAU'; updateGraphs();">DAU</button>
+      <button type="button" class="btn btn-default" ng-class="{active: metric==='D1 Retention'}" ng-click="metric = 'D1 Retention'; updateGraphs();">D1 Retention</button>
+    </div>
+
+    <h3>Platforms</h3>
+    <button type="button" class="btn btn-default " ng-class="{active: iOS}" ng-click="iOS = !iOS; updateGraphs();">iOS</button>
+    <button type="button" class="btn btn-default" ng-class="{active: Android}" ng-click="Android = !Android; updateGraphs();">Android</button>
+
+    <h3>Comparisons</h3>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default" ng-class="{active: platforms}" ng-click="platforms = !platforms; categories = false; iOS = true; Android = true; updateGraphs();">Platforms</button>
+      <button type="button" class="btn btn-default" ng-class="{active: categories}" ng-click="categories = !categories; platforms = false; updateGraphs();">Categories</button>
+    </div>
+  </div>
+</div>
+<div class="row chart-container">
+  <div class="chart col-xs-12">
+  </div>
+</div>
