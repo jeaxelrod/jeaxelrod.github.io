@@ -56,7 +56,7 @@
   font-size: 20px;
 }
 .steps {
-  height: 600px;
+  margin-bottom: 20px;
 }
 .carousel-img {
   margin: 0 auto;
@@ -72,5 +72,10 @@
 }
 #timer {
   clear: both;
+}
+@media (max-width: 480px) {
+  .steps-container p {
+    font-size: 12px;
+  }
 }
 
