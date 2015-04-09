@@ -1,0 +1,76 @@
+/* app css stylesheet */
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.recipe-pic {
+  max-width: 100%;
+  max-height: 100%;
+}
+.recipe {
+  margin: 20px auto;
+}
+.recipe:hover {
+  background-color: #F7F7F9
+}
+.pic-container {
+  padding: 0;
+}
+.diet {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: rgba(88, 122, 146, 0.9);
+  border-color: #285E8E;
+  color: white;
+}
+.recipe-title {
+  margin-top: 0;
+  font-size: 25px;
+}
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+}
+.items {
+  margin: 5px 0;
+}
+.items p {
+  margin: 0;
+  display: inline-block;
+}
+.items h4 {
+  margin: 0;
+  display: inline-block;
+  font-weight: normal;
+}
+.btn-recipe {
+  margin: 10px auto;
+}
+.steps-container p{
+  font-size: 20px;
+}
+.steps {
+  height: 600px;
+}
+.carousel-img {
+  margin: 0 auto;
+}
+.timer {
+  width: 200px;
+  margin: 0 auto;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.timer p {
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+#timer {
+  clear: both;
+}
+

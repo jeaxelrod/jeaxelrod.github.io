@@ -1,0 +1,17 @@
+<div class="row steps-container">
+  <div class="col-md-8 col-md-offset-2 steps">
+    <carousel interval="0">
+      <slide ng-repeat="step in recipe.steps" active="step.active">
+        <img class="carousel-img" ng-src="{{step.img}}">
+        <div class="carousel-caption">
+          <p>{{step.value}}</p>
+          <div ng-if="step.seconds" ng-repeat="second in step.seconds">
+            <timer seconds={{second}}></timer>
+          </div>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <div class="text-center" id="timer">
+  </div>
+</div>

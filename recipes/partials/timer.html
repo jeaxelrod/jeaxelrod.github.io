@@ -1,0 +1,6 @@
+<div class="timer text-center">
+  <p>{{seconds}} <small>s</small></p>
+    <button ng-if="stopped" class="btn btn-sm btn-link" ng-click="start()">Start</button>
+    <button ng-if="!stopped"  class="btn btn-sm btn-link" ng-click="stop()">Stop</button>
+    <button class="btn btn-link btn-sm" ng-click="reset()">Reset</button>
+</div>

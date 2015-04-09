@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <h1 class='text-center'>{{recipe.name}}</h1>
+    <div class="row">    
+      <div class="ingredients col-md-6 col-md-offset-3 text-center">
+        <div class="restrictions">
+          <span class="diet" ng-repeat="restriction in recipe.diets">{{restriction.value | capitalize}}</span>
+        </div>
+        <h3 ng-show="recipe.total_time_secs">Total time: {{recipe.total_time_secs/60}} mins</h3>
+        <h3 >Ingredients</h3>
+        <ul ng-repeat="ingredient in recipe.ingredients" class="ingredients-list">
+          <li class='items'>
+            <h4>{{ingredient.ingredient | capitalize}}</h4>
+            <p>{{ingredient.quantity}} {{ingredient.unit}}</p>
+          </li>
+        </ul>
+        <a ui-sref="recipe-steps({id: recipe.id})" class="btn btn-primary btn-recipe">Start Recipe</a>
+      </div>
+    </div>
+  </div>
+</div>
